@@ -12,7 +12,6 @@ def register(request):
         if form.is_valid():
             user = form.save()
             return redirect('users/createprofile')
-
     form = NewUserForm()
     context = {
         'form':form,
